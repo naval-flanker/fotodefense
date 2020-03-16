@@ -1,0 +1,80 @@
+.modern-page-navigation{
+	margin-bottom:35px;
+}
+
+.modern-page-navigation .modern-page-next,
+.modern-page-navigation .modern-page-previous,
+.modern-page-navigation a, 
+.modern-page-current, 
+.modern-page-dots
+{
+	position:relative;
+	width:30px;
+	height:30px;
+	margin:0 5px;
+	background:#edeff0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border:none;
+	color:#000;
+	text-decoration:none;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	    -webkit-transition: all 0.08s linear 0s;
+    -moz-transition: all 0.08s linear 0s;
+    -o-transition: all 0.08s linear 0s;
+    transition: all 0.08s linear 0s;
+	
+}
+
+.modern-page-navigation .modern-page-all,
+.modern-page-navigation .modern-page-next,
+.modern-page-navigation .modern-page-previous{ 
+	width:auto;
+	padding:0 5px;
+}
+
+.modern-page-navigation a:hover,
+.modern-page-current{
+	background-color:#f7386b;
+	color:#fff;
+}	
+	
+.modern-page-navigation .modern-page-next{
+	background-position: 0 -30px;
+}	
+
+.modern-page-navigation .modern-page-next:hover:before,
+.modern-page-navigation .modern-page-previous:hover:before{
+	color:#fff;
+}
+
+@media only screen and (max-width: 1170px) {
+	.modern-page-navigation{
+		margin-bottom:20px;
+	}	
+}
+
+
+
+
+
+
+
