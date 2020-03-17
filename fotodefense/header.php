@@ -22,14 +22,14 @@ $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/hyphenate.js');
 <?=$APPLICATION->ShowHead();?>
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-<link rel="manifest" href="icon/site.webmanifest">
-<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="icon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="<?=SITE_TEMPLATE_PATH?>/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?=SITE_TEMPLATE_PATH?>/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?=SITE_TEMPLATE_PATH?>/icon/favicon-16x16.png">
+<link rel="manifest" href="<?=SITE_TEMPLATE_PATH?>/icon/site.webmanifest">
+<link rel="mask-icon" href="<?=SITE_TEMPLATE_PATH?>/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="<?=SITE_TEMPLATE_PATH?>/icon/favicon.ico">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="icon/browserconfig.xml">
+<meta name="msapplication-config" content="<?=SITE_TEMPLATE_PATH?>/icon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
 </head>
@@ -64,32 +64,25 @@ $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/hyphenate.js');
 				false
 			);?>
 		</div>	
-		<?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"fotodefense_top_menu", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "2",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "fotodefense_top_menu"
-	),
-	false
-);?>
-	
-		
-	
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:menu", 
+				"fotodefense_top_menu", 
+				array(
+					"ALLOW_MULTI_SELECT" => "N",
+					"CHILD_MENU_TYPE" => "left",
+					"DELAY" => "N",
+					"MAX_LEVEL" => "2",
+					"MENU_CACHE_GET_VARS" => array(
+					),
+					"MENU_CACHE_TIME" => "3600",
+					"MENU_CACHE_TYPE" => "N",
+					"MENU_CACHE_USE_GROUPS" => "Y",
+					"ROOT_MENU_TYPE" => "top",
+					"USE_EXT" => "Y",
+					"COMPONENT_TEMPLATE" => "fotodefense_top_menu"
+				),
+				false
+			);?>
 	</header>
-
-	<!-- CENTRAL BLOCK -->	
-	<div class="main-outer">
-
-	<!-- MAIN -->
-		<main class="main">
+		<div class="main-outer">
+			<main class="main">
